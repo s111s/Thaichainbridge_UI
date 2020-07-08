@@ -1,0 +1,6 @@
+export * from './IconGithub'
+export * from './IconTelegram'
+export * from './IconTwitter'
+export * from './IconReddit'
+export * from './IconMedium'
+export * from './IconDiscord'

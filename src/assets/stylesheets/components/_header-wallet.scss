@@ -1,0 +1,51 @@
+.header-wallet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (max-width: 650px) {
+        display: none;
+    }
+
+    .wallet-container {
+        display: flex;
+
+        .wallet-icon {
+            margin-right: 10px;
+            height: 26px;
+        }
+        .wallet-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .wallet-text {
+            color: #414141;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 14px;
+            padding-bottom: 6px;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        .wallet-link {
+            cursor: pointer;
+        }
+        .wallet-text-metamask {
+            color: $header-menu-icon-color;
+        }
+    }
+
+    .daily-quota-container {
+        background-color: $daily-quota-background;
+        border-radius: 2px;
+        height: 4px;
+
+        .daily-quota-progress {
+            background-color: $daily-quota-progress;
+            border-radius: 2px;
+            height: 4px;
+        }
+    }
+}
